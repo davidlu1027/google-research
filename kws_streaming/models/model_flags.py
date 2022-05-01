@@ -65,7 +65,7 @@ def update_flags(flags):
     upd_flags.data_frame_padding = 'causal'
   else:
     upd_flags.data_frame_padding = None
-
+  upd_flags.quantize=True
   # summary logs for TensorBoard
   upd_flags.summaries_dir = os.path.join(flags.train_dir, 'logs/')
   return upd_flags
